@@ -6,13 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WordsOfWisdomComponent } from './words-of-wisdom/words-of-wisdom.component';
+import { FeedingAlarmComponent } from './feeding-alarm/feeding-alarm.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfileComponent,
-    WordsOfWisdomComponent
+    WordsOfWisdomComponent,
+    FeedingAlarmComponent
   ],
   imports: [
     BrowserModule,
