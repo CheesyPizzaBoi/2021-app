@@ -1,45 +1,51 @@
-    #onlytable {
-        height: 900px;
-        width: 150px;
-    }
-    
-    table,
-    td {
-        border: 3px solid black
-    }
-    
-    #companyname {
-        position: fixed;
-        top: 20px;
-        left: 300px;
-    }
-    
-    #overview {
-        position: fixed;
-        top: 0px;
-        left: 800px;
-    }
-    
-    #parks {
-        position: fixed;
-        top: 300px;
-        left: 300px;
-    }
-    
-    #advice {
-        position: fixed;
-        top: 500x;
-        left: 300px;
-    }
-    
-    #reminders {
-        position: fixed;
-        top: 30px;
-        left: 1500px;
-    }
-    
-    #comingup {
-        position: fixed;
-        top: 500px;
-        left: 1500px;
-    }
+#onlytable {
+    height: 900px;
+    width: 150px;
+}
+
+table,
+td {
+    border: 3px solid black
+}
+
+#companyname {
+    position: fixed;
+    top: 20px;
+    left: 300px;
+}
+
+#overview {
+    position: fixed;
+    top: 0px;
+    left: 800px;
+}
+
+#parks {
+    position: fixed;
+    top: 300px;
+    left: 300px;
+}
+
+#advice {
+    position: fixed;
+    top: 500x;
+    left: 300px;
+}
+
+#reminders {
+    position: fixed;
+    top: 30px;
+    left: 1500px;
+}
+
+#comingup {
+    position: fixed;
+    top: 500px;
+    left: 1500px;
+}
+
+.taskimage {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}

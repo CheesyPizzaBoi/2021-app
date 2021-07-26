@@ -8,7 +8,8 @@ import { FeedingAlarmComponent } from "./feeding-alarm/feeding-alarm.component";
 import { PlayDatesComponent } from "./play-dates/play-dates.component";
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+   { path: "home", component: HomeComponent },
   { path: "profile", component: ProfileComponent },
   { path: "words-of-wisdom", component: WordsOfWisdomComponent },
   { path: "play-dates", component: PlayDatesComponent },
