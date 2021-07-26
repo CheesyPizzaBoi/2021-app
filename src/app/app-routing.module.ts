@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: "profile", component: ProfileComponent },
   { path: "words-of-wisdom", component: WordsOfWisdomComponent },
   { path: "play-dates", component: PlayDatesComponent },
+  { path: "feeding-alarm", component: FeedingAlarmComponent},
 
 ];
 
