@@ -1,5 +1,6 @@
 #onlytable {
-    height: 900px;
+    position: fixed;
+    height: 1350px;
     width: 150px;
 }
 
@@ -9,43 +10,106 @@ td {
 }
 
 #companyname {
-    position: fixed;
-    top: 20px;
+    position: relative;
+    top: 150px;
     left: 300px;
 }
 
 #overview {
-    position: fixed;
-    top: 0px;
-    left: 800px;
+    position: relative;
+    top: -350px;
+    left: 900px;
 }
 
 #parks {
-    position: fixed;
-    top: 300px;
+    position: relative;
+    top: 50px;
     left: 300px;
 }
 
 #advice {
-    position: fixed;
-    top: 500x;
+    position: relative;
+    top: 700px;
     left: 300px;
 }
 
 #reminders {
-    position: fixed;
-    top: 30px;
-    left: 1500px;
+    position: relative;
+    top: -500px;
+    left: 2000px;
 }
 
 #comingup {
-    position: fixed;
-    top: 500px;
-    left: 1500px;
+    position: relative;
+    top: -200px;
+    left: 2000px;
 }
 
 .taskimage {
     width: 100px;
     height: 100px;
     margin-left: 20px;
+}
+
+#taskimagewhiteball {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+#dogregis {
+    width: 152px;
+    height: 147.3px;
+    background-color: yellow;
+    position: relative;
+    top: -165px;
+    left: 250px;
+    text-align: center;
+}
+
+.parkss {
+    width: 152px;
+    height: 147.3px;
+}
+
+#park1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#park2 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+#park3 {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+#park4 {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+#park5 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+}
+
+#park6 {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+#park7 {
+    position: absolute;
+    top: 250px;
+    left: 400px;
 }
