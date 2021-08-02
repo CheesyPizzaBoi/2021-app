@@ -36,15 +36,21 @@ td {
 }
 
 #reminders {
-    position: relative;
-    top: -2000px;
+    float: right;
+    position: absolute;
+    top: 20px;
     left: 1400px;
+    width: 300px;
+    /* margin-right: 0px; */
 }
 
 #comingup {
-    position: relative;
-    top: -1900px;
+    position: absolute;
+    float: right;
+    top: 20px;
     left: 1400px;
+    margin-top: 200px;
+    /* margin-right: 0px; */
 }
 
 .taskimage {
