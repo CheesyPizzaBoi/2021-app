@@ -11,35 +11,35 @@ td {
 
 #companyname {
     position: relative;
-    top: -1300px;
-    left: 300px;
+    margin-top: -1300px;
+    margin-left: 300px;
 }
 
 #overview {
     position: relative;
-    top: -1780px;
-    left: 900px;
+    margin-top: -450px;
+    margin-left: 900px;
     width: 300px;
     height: 157px
 }
 
 #parks {
     position: relative;
-    top: -1550px;
-    left: 300px;
+    margin-top: 250px;
+    margin-left: 300px;
 }
 
 #advice {
     position: relative;
-    top: -1100px;
-    left: 300px;
+    margin-top: 500px;
+    margin-left: 300px;
 }
 
 #reminders {
     float: right;
     position: absolute;
-    top: 20px;
-    left: 1400px;
+    margin-top: -950px;
+    margin-left: 1350px;
     width: 300px;
     /* margin-right: 0px; */
 }
@@ -47,9 +47,8 @@ td {
 #comingup {
     position: absolute;
     float: right;
-    top: 20px;
-    left: 1400px;
-    margin-top: 200px;
+    margin-left: 1350px;
+    margin-top: -650px;
     /* margin-right: 0px; */
 }
 
