@@ -7,6 +7,10 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WordsOfWisdomComponent } from './words-of-wisdom/words-of-wisdom.component';
 import { FeedingAlarmComponent } from './feeding-alarm/feeding-alarm.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +22,9 @@ import { FeedingAlarmComponent } from './feeding-alarm/feeding-alarm.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
