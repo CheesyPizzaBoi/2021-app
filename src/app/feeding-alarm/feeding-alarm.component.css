@@ -1,0 +1,46 @@
+#onlytable {
+  position: static;
+  margin-left: -8px;
+  margin-top: -8px;
+  height: 1350px;
+  width: 150px;
+}
+
+td {
+  border: 3px solid black;
+}
+
+.taskimage {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+#taskimagewhiteball {
+  width: 90px;
+  height: 90px;
+  margin-left: 25px;
+}
+
+#bluepawhome {
+  width: 90px;
+  height: 90px;
+  margin-left: 25px;
+}
+
+#reminders {
+  position: relative;
+  top: -1250px;
+  left: 1400px;
+}
+
+#comingup {
+  position: relative;
+  top: -1150px;
+  left: 1400px;
+}
+
+#companyname {
+  bottom: 6666px;
+  left: 50px;
+}

@@ -1,10 +1,10 @@
-#onlytable {
+/* #onlytable {
     position: relative;
     height: 1350px;
     width: 150px;
 }
 
-table,
+
 td {
     border: 3px solid black
 }
@@ -41,7 +41,7 @@ td {
     margin-top: -950px;
     margin-left: 1350px;
     width: 300px;
-    /* margin-right: 0px; */
+    
 }
 
 #comingup {
@@ -49,7 +49,6 @@ td {
     float: right;
     margin-left: 1350px;
     margin-top: -650px;
-    /* margin-right: 0px; */
 }
 
 .taskimage {
@@ -125,4 +124,64 @@ td {
     position: absolute;
     top: 250px;
     left: 400px;
+}
+ */
+
+#table {
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: -8px;
+  width: 150px;
+  height: 100vh;
+  background-color: #002176;
+}
+
+.tab {
+  width: auto;
+  height: 150px;
+  background-color: #002176;
+  border-color: white;
+  border-width: 1.5px;
+  border-style: solid;
+  border-left-color: #002176;
+}
+
+#logo {
+  background-color: white;
+  border-right-color: #002176;
+  border-bottom-color: #002176;
+  border-top-color: #002176;
+}
+#logoImage {
+  width: 115px;
+  height: 115px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.icons {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.iconText {
+  color: white;
+  font-size: 24px;
+  font-family: Roboto;
+  text-align: center;
+}
+
+#words, #alarm {
+    font-size: 17px;
+}
+
+#homeTab {
+    background-color: #F1FF9D;
+}
+#homeText {
+    color: #002176;
 }
