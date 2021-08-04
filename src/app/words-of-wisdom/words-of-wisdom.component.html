@@ -2,15 +2,13 @@
 <div>
     <div>
         <input id='val' type="text" #box/>
-        <button (click)="getVal(box.value)">
+        <button method=POST (click)="getVal(box.value)">
             Add Post
         </button>
     </div>
+
     <p *ngFor="let blogPost of user.posts">
         {{blogPost}}
         
     </p>
-
-    
-    
 </div>

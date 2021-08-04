@@ -22,8 +22,10 @@
     "@angular/router": "11.2.0",
     "@vonage/server-sdk": "^2.10.10",
     "core-js": "3.8.3",
+    "express": "^4.17.1",
     "nodemon": "^2.0.12",
     "rxjs": "6.6.3",
+    "twilio": "^3.66.1",
     "zone.js": "0.11.3"
   },
   "devDependencies": {

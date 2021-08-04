@@ -10,7 +10,7 @@ export class WordsOfWisdomComponent implements OnInit {
   
   
   
-  @Input('value') posting: string;
+  
   
 
   
@@ -34,17 +34,9 @@ export class WordsOfWisdomComponent implements OnInit {
     console.log(val);
     this.currentVal=val
     this.user.posts.push(this.currentVal);
-
   }
 
-  addPost () {
-    
-    
-    
-    
-    
 
-  };
   
  
 
