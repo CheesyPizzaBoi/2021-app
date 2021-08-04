@@ -14,7 +14,7 @@ import { FeedingAlarmComponent } from './feeding-alarm/feeding-alarm.component';
     HomeComponent,
     ProfileComponent,
     WordsOfWisdomComponent,
-    FeedingAlarmComponent
+    FeedingAlarmComponent,
   ],
   imports: [
     BrowserModule,

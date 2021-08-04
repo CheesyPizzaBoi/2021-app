@@ -6,11 +6,14 @@ import { ProfileComponent } from "./profile/profile.component";
 import { WordsOfWisdomComponent } from "./words-of-wisdom/words-of-wisdom.component";
 import { FeedingAlarmComponent } from "./feeding-alarm/feeding-alarm.component";
 
+
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
+  { path: "", redirectTo: "/home", pathMatch: "full" },
+   { path: "home", component: HomeComponent },
   { path: "profile", component: ProfileComponent },
   { path: "words-of-wisdom", component: WordsOfWisdomComponent },
-  { path: "feeding-alarm", component: FeedingAlarmComponent }
+  { path: "feeding-alarm", component: FeedingAlarmComponent},
+
 ];
 
 @NgModule({

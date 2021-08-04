@@ -1,0 +1,128 @@
+#onlytable {
+    position: relative;
+    height: 1350px;
+    width: 150px;
+}
+
+table,
+td {
+    border: 3px solid black
+}
+
+#companyname {
+    position: relative;
+    margin-top: -1300px;
+    margin-left: 300px;
+}
+
+#overview {
+    position: relative;
+    margin-top: -450px;
+    margin-left: 900px;
+    width: 300px;
+    height: 157px
+}
+
+#parks {
+    position: relative;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+
+#advice {
+    position: relative;
+    margin-top: 500px;
+    margin-left: 300px;
+}
+
+#reminders {
+    float: right;
+    position: absolute;
+    margin-top: -950px;
+    margin-left: 1350px;
+    width: 300px;
+    /* margin-right: 0px; */
+}
+
+#comingup {
+    position: absolute;
+    float: right;
+    margin-left: 1350px;
+    margin-top: -650px;
+    /* margin-right: 0px; */
+}
+
+.taskimage {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#taskimagewhiteball {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+#bluepawhome {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+#dogregis {
+    width: 152px;
+    height: 147.3px;
+    background-color: yellow;
+    position: relative;
+    top: -165px;
+    left: 250px;
+    text-align: center;
+}
+
+.parkss {
+    width: 152px;
+    height: 147.3px;
+}
+
+#park1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#park2 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+#park3 {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+#park4 {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+#park5 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+}
+
+#park6 {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+#park7 {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
