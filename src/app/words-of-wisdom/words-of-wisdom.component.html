@@ -58,15 +58,30 @@
   <h1>Pet Guardian</h1>
 </div>
 
-<div>
-  <div>
-    <input id="val" type="text" #box />
-    <button method="POST" (click)="getVal(box.value)">Add Post</button>
+<form #add="ngForm" (ngSubmit)="create_Newemployee(add)" >
+  <div class="form-group">
+      <label for="message"> Name</label> <br />
+      <input type="text" name="name" class="form-control" ngModel />
   </div>
+  <div class="form-group">
+      <label for="message"> Message</label> <br />
+      <input type="text" name="message" class="form-control" ngModel />
+</div>
+  <pre></pre>
+  <button type="submit">
+      Add Blog
+  </button>
+  
+</form>
 
-  <p *ngFor="let blogPost of user.posts">
-    {{ blogPost }}
-  </p>
+<div>
+  <h1 id="blogPost" *ngFor = "let item of messages">
+      Name: {{item.name}}
+      <br>
+      BlogPost: {{item.message}}
+  </h1>
+
+  
 </div>
 
 <div id="reminders">

@@ -1,45 +1,50 @@
 #onlytable {
-    position: relative;
-    height: 1350px;
-    width: 150px;
+  position: relative;
+  height: 1350px;
+  width: 150px;
+}
+
+#blogPost {
+  background-color: aqua;
+  padding-bottom: 20px;
 }
 
 table,
 td {
-    border: 3px solid black
+  border: 3px solid black;
 }
 
 .taskimage {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
 }
 
 #taskimagewhiteball {
-    width: 90px;
-    height: 90px;
-    margin-left: 25px;
+  width: 90px;
+  height: 90px;
+  margin-left: 25px;
 }
 
 #bluepawhome {
-    width: 90px;
-    height: 90px;
-    margin-left: 25px;
+  width: 90px;
+  height: 90px;
+  margin-left: 25px;
 }
 
 #reminders {
-    position: relative;
-    top: -1250px;
-    left: 1400px;
+  position: relative;
+  top: -1250px;
+  left: 1400px;
 }
 
 #comingup {
-    position: relative;
-    top: -1150px;
-    left: 1400px;
+  position: relative;
+  top: -1150px;
+  left: 1400px;
 }
 
 #companyname {
-    bottom: 6666px;
-    left: 50px
+  bottom: 6666px;
+  left: 50px;
 }

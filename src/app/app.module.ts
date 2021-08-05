@@ -9,7 +9,10 @@ import { WordsOfWisdomComponent } from './words-of-wisdom/words-of-wisdom.compon
 import { FeedingAlarmComponent } from './feeding-alarm/feeding-alarm.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
