@@ -1,117 +1,98 @@
-<table id="onlytable" style="background-color: blue">
-  <tr>
-    <td style="background-color: #ffffff">
-      <img class="taskimage" src="../../assets/logoshield-betterlines.png" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img
-        routerLink="/profile"
-        class="taskimage"
-        src="../../assets/white-user.png"
-      />
-    </td>
-  </tr>
-  <td>
-    <img
-      routerLink="/home"
-      id="bluepawhome"
-      src="..//..//assets/white-paw.png"
-    />
-  </td>
-  <tr>
-    <td style="background-color: #f1ff9d">
-      <img
-        routerLink="/words-of-wisdom"
-        class="taskimage"
-        src="../../assets/blue-book.png"
-      />
-    </td>
-  </tr>
+<div id="table">
+    <div id="logo" class="tab">
+        <img id="logoImage" src="../../assets/bi_shield.png" />
+    </div>
 
-  <tr>
-    <td>
-      <img
-        routerLink="/feeding-alarm"
-        class="taskimage"
-        src="../../assets/white-clock.png"
-      />
-    </td>
-  </tr>
+    <div class="tab">
+        <a routerLink="/profile">
+            <img class="icons" src="../../assets/white-user.png" />
+        </a>
+        <p class="iconText">Profile</p>
+    </div>
 
-  <tr>
-    <td>
-      <img
-        routerLink="/play-dates"
-        id="taskimagewhiteball"
-        src="../../assets/white-ball.png"
-      />
-    </td>
-  </tr>
-  <tr>
-    <td width:150px height="300px"></td>
-  </tr>
-</table>
+    <div class="tab">
+        <a routerLink="/home">
+            <img class="icons" src="../../assets/white-paw.png" />
+        </a>
+        <p class="iconText" id="homeText">Home Page</p>
+    </div>
+
+    <div class="tab" id="wordsTab">
+        <a routerLink="/words-of-wisdom">
+            <img class="icons" src="../../assets/blue-book.png" />
+        </a>
+        <p class="iconText" id="words">Words of Wisdom</p>
+    </div>
+
+    <div class="tab">
+        <a routerLink="/feeding-alarm">
+            <img class="icons" src="../../assets/white-clock.png" />
+        </a>
+        <p class="iconText" id="alarm">Feeding Alarm</p>
+    </div>
+</div>
 
 <div id="companyname">
-  <h1>Pet Guardian</h1>
+    <h1>Pet Guardian</h1>
+</div>
+<div id="wOw">
+    <h2>Words Of Wisdom</h2>
 </div>
 
-<form #add="ngForm" (ngSubmit)="create_Newemployee(add)" >
-  <div class="form-group">
-      <label for="message"> Name</label> <br />
-      <input type="text" name="name" class="form-control" ngModel />
-  </div>
-  <div class="form-group">
-      <label for="message"> Message</label> <br />
-      <input type="text" name="message" class="form-control" ngModel />
-</div>
-  <pre></pre>
-  <button type="submit">
+<div id="text-block">
+    <form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
+        <div class="form-group">
+            <label for="message"> Name</label> <br />
+            <input type="text" name="name" class="form-control" ngModel />
+        </div>
+        <div class="form-group">
+            <label for="message"> Message</label> <br />
+            <input type="text" name="message" class="form-control" ngModel />
+        </div>
+        <pre></pre>
+        <button type="submit">
       Add Blog
   </button>
-  
-</form>
+    </form>
+</div>
 
-<div>
-  <h1 id="blogPost" *ngFor = "let item of messages">
-      Name: {{item.name}}
-      <br>
-      BlogPost: {{item.message}}
-  </h1>
+<div id="posted-text">
+    <h1 id="blogPost" *ngFor="let item of messages">
+        Name: {{item.name}}
+        <br> BlogPost: {{item.message}}
+    </h1>
 
-  
+
 </div>
 
 <div id="reminders">
-  <h1>Daily reminders</h1>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 1</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 2</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 3</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 4</a>
-  </div>
+    <h1>Daily reminders</h1>
+    <div>
+        <a routerLink="/feeding-alarm">feeding alarm 1</a>
+    </div>
+    <div>
+        <a routerLink="/feeding-alarm">feeding alarm 2</a>
+    </div>
+    <div>
+        <a routerLink="/feeding-alarm">feeding alarm 3</a>
+    </div>
+    <div>
+        <a routerLink="/feeding-alarm">feeding alarm 4</a>
+    </div>
 </div>
 
 <div id="comingup">
-  <h1>Coming up</h1>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 1</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 2</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 3</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 4</a>
-  </div>
+    <h1>Coming up</h1>
+    <div>
+        <a routerLink="/play-dates">playdates 1</a>
+    </div>
+    <div>
+        <a routerLink="/play-dates">playdates 2</a>
+    </div>
+    <div>
+        <a routerLink="/play-dates">playdates 3</a>
+    </div>
+    <div>
+        <a routerLink="/play-dates">playdates 4</a>
+    </div>
 </div>
