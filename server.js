@@ -1,14 +1,26 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
-const port = 3000;
+const cors = require('cors');
+
+const port = 'https://git.heroku.com/app-2021-node.git' ;
+
+app.use(express.static('./dist/my-app'));
+
+app.get('/*', (req, res) =>
+ res.sendFile('index.html', {root: 'dist/my-app'}),
+);
+
+
+
 
 app.use(express.json());
 
-const accountSid; 
-const authToken;
-const client;
+const accountSid = 'AC3f73df2a47a9687e623c5503bf103a77'; 
+const authToken = '8d8931ac36e40b65f738e13b9d35535c'; 
+const client = require('twilio')(accountSid, authToken); 
 
 const bodyParser = require('body-parser');
 
@@ -23,10 +35,11 @@ app.all("/*", function(req, res, next){
   });
 
 
-app.post('/sms', (req, res) => {
+app.post('https://git.heroku.com/app-2021-node.git', (req, res) => {
     client.messages 
       .create({ 
-         body: req.body.message,        
+         body: req.body.message,
+         messagingServiceSid: 'MGda7af18591f0c237763fb5cf2be37db5',        
          to: `+1${req.body.number}`,
        }) 
       .then(message => console.log("Message Sent!")) 
@@ -35,6 +48,4 @@ app.post('/sms', (req, res) => {
  
 
 
-app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
-});
+app.listen(process.env.PORT || 8080);

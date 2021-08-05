@@ -16,7 +16,7 @@ export class FeedingAlarmComponent implements OnInit {
       number: alarm.value.num,
       message: alarm.value.message,
     };
-    this.http.post("http://localhost:3000/sms", obj).subscribe(() => {
+    this.http.post("https://git.heroku.com/app-2021-node.git", obj).subscribe(() => {
       console.log(obj);
     });
     alarm.reset();
