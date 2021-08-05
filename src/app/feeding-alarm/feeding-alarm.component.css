@@ -1,13 +1,61 @@
-#onlytable {
-  position: static;
+#table {
   margin-left: -8px;
   margin-top: -8px;
-  height: 1350px;
+  margin-bottom: -8px;
   width: 150px;
+  height: 100vh;
+  background-color: #002176;
 }
 
-td {
-  border: 3px solid black;
+.tab {
+  width: auto;
+  height: 150px;
+  background-color: #002176;
+  border-color: white;
+  border-width: 1.5px;
+  border-style: solid;
+  border-left-color: #002176;
+}
+
+#logo {
+  background-color: white;
+  border-right-color: #002176;
+  border-bottom-color: #002176;
+  border-top-color: #002176;
+}
+#logoImage {
+  width: 115px;
+  height: 115px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.icons {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.iconText {
+  color: white;
+  font-size: 24px;
+  font-family: Roboto;
+  text-align: center;
+}
+
+#words,
+#alarm {
+  font-size: 17px;
+}
+
+#profileTab {
+  background-color: #f1ff9d;
+}
+#alarm {
+  color: #002176;
 }
 
 .taskimage {

@@ -1,7 +1,190 @@
-#onlytable {
-  position: relative;
-  height: 1350px;
+
+/* #onlytable {
+    position: relative;
+    height: 1350px;
+    width: 150px;
+}
+
+
+td {
+    border: 3px solid black
+}
+
+#companyname {
+    position: relative;
+    margin-top: -1300px;
+    margin-left: 300px;
+}
+
+#overview {
+    position: relative;
+    margin-top: -450px;
+    margin-left: 900px;
+    width: 300px;
+    height: 157px
+}
+
+#parks {
+    position: relative;
+    margin-top: 250px;
+    margin-left: 300px;
+}
+
+#advice {
+    position: relative;
+    margin-top: 500px;
+    margin-left: 300px;
+}
+
+#reminders {
+    float: right;
+    position: absolute;
+    margin-top: -950px;
+    margin-left: 1350px;
+    width: 300px;
+    
+}
+
+#comingup {
+    position: absolute;
+    float: right;
+    margin-left: 1350px;
+    margin-top: -650px;
+}
+
+.taskimage {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#taskimagewhiteball {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+#bluepawhome {
+    width: 90px;
+    height: 90px;
+    margin-left: 25px;
+}
+
+#dogregis {
+    width: 152px;
+    height: 147.3px;
+    background-color: yellow;
+    position: relative;
+    top: -165px;
+    left: 250px;
+    text-align: center;
+}
+
+.parkss {
+    width: 152px;
+    height: 147.3px;
+}
+
+#park1 {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+#park2 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+#park3 {
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+#park4 {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+#park5 {
+    position: absolute;
+    top: 250px;
+    left: 0px;
+}
+
+#park6 {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+
+#park7 {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+ */
+
+ #table {
+  margin-left: -8px;
+  margin-top: -8px;
+  margin-bottom: -8px;
   width: 150px;
+  height: 100vh;
+  background-color: #002176;
+}
+
+.tab {
+  width: auto;
+  height: 150px;
+  background-color: #002176;
+  border-color: white;
+  border-width: 1.5px;
+  border-style: solid;
+  border-left-color: #002176;
+}
+
+#logo {
+  background-color: white;
+  border-right-color: #002176;
+  border-bottom-color: #002176;
+  border-top-color: #002176;
+}
+#logoImage {
+  width: 115px;
+  height: 115px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.icons {
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+.iconText {
+  color: white;
+  font-size: 24px;
+  font-family: Roboto;
+  text-align: center;
+}
+
+#words, #alarm {
+    font-size: 17px;
+}
+
+#wordsTab {
+    background-color: #F1FF9D;
+}
+#words {
+    color: #002176;
 }
 
 #blogPost {
@@ -9,28 +192,6 @@
   padding-bottom: 20px;
 }
 
-table,
-td {
-  border: 3px solid black;
-}
-
-.taskimage {
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
-}
-
-#taskimagewhiteball {
-  width: 90px;
-  height: 90px;
-  margin-left: 25px;
-}
-
-#bluepawhome {
-  width: 90px;
-  height: 90px;
-  margin-left: 25px;
-}
 
 #reminders {
   position: relative;

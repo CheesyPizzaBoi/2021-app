@@ -1,58 +1,36 @@
-<table id="onlytable" style="background-color: blue">
-  <tr>
-    <td style="background-color: #ffffff">
-      <img class="taskimage" src="../../assets/logoshield-betterlines.png" />
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <img
-        routerLink="/profile"
-        class="taskimage"
-        src="../../assets/white-user.png"
-      />
-    </td>
-  </tr>
-  <td>
-    <img
-      routerLink="/home"
-      id="bluepawhome"
-      src="..//..//assets/white-paw.png"
-    />
-  </td>
-  <tr>
-    <td>
-      <img
-        routerLink="/words-of-wisdom"
-        class="taskimage"
-        src="../../assets/white-book.png"
-      />
-    </td>
-  </tr>
+<div id="table">
+  <div id="logo" class="tab">
+    <img id="logoImage" src="../../assets/bi_shield.png" />
+  </div>
 
-  <tr style="background-color: #f1ff9d">
-    <td>
-      <img
-        routerLink="/feeding-alarm"
-        class="taskimage"
-        src="../../assets/blue-clock.png"
-      />
-    </td>
-  </tr>
+  <div class="tab" >
+    <a routerLink="/profile">
+      <img class="icons" src="../../assets/white-user.png" />
+    </a>
+    <p class="iconText" >Profile</p>
+  </div>
 
-  <tr>
-    <td>
-      <img
-        routerLink="/play-dates"
-        id="taskimagewhiteball"
-        src="../../assets/white-ball.png"
-      />
-    </td>
-  </tr>
-  <tr>
-    <td width:150px height="300px"></td>
-  </tr>
-</table>
+  <div class="tab">
+    <a routerLink="/home">
+      <img class="icons" src="../../assets/white-paw.png" />
+    </a>
+    <p class="iconText">Home Page</p>
+  </div>
+
+  <div class="tab" >
+    <a routerLink="/words-of-wisdom">
+      <img class="icons" src="../../assets/white-book.png" />
+    </a>
+    <p class="iconText" id="words">Words of Wisdom</p>
+  </div>
+
+  <div class="tab" id="profileTab">
+    <a routerLink="/feeding-alarm">
+      <img class="icons" src="../../assets/blue-clock.png" />
+    </a>
+    <p class="iconText" id="alarm">Feeding Alarm</p>
+  </div>
+</div>
 
 <div>
   <form #alarm="ngForm" (ngSubmit)="submit(alarm)">
