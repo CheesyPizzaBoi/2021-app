@@ -42,7 +42,7 @@
 
 .iconText {
     color: white;
-    font-size: 24px;
+    font-size: 17px;
     font-family: Roboto;
     text-align: center;
 }
@@ -79,9 +79,10 @@
 #blogPost {
     background-color: #F1FF9D;
     padding-bottom: 20px;
-    margin-left: 500px;
+    margin-left: 400px;
     width: 500px;
     margin-right: 0;
+    font-size: 20px;
 }
 
 #companyname {
@@ -91,11 +92,11 @@
 }
 
 #wOw {
-    margin-left: 600px;
+    margin-left: 550px;
     margin-top: 150px;
     width: 300px;
 }
 
 #text-block {
-    margin-left: 500px;
+    margin-left: 400px;
 }
