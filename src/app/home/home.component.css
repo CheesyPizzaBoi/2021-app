@@ -134,6 +134,7 @@ td {
   width: 150px;
   height: 100vh;
   background-color: #002176;
+  float: left;
 }
 
 .tab {
@@ -175,13 +176,178 @@ td {
   text-align: center;
 }
 
-#words, #alarm {
-    font-size: 17px;
+#words,
+#alarm {
+  font-size: 17px;
 }
 
 #homeTab {
-    background-color: #F1FF9D;
+  background-color: #f1ff9d;
 }
 #homeText {
-    color: #002176;
+  color: #002176;
+}
+
+#company {
+  display: inline-block;
+  text-decoration: underline;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 75px;
+}
+
+#slogan {
+  width: 400px;
+  height: 500px;
+  margin-top: -150px;
+  margin-left: 800px;
+}
+
+#helping {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.subheadings {
+  font-style: normal;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#minHelping {
+  font-size: 18px;
+  text-align: center;
+}
+
+#registered {
+  margin-left: 175px;
+  margin-top: -340px;
+}
+
+.pets {
+  position: absolute;
+  width: 207px;
+  height: 120px;
+  top: 230px;
+  left: 200px;
+}
+
+#more {
+  left: 453px;
+  background-color: #f1ff9d;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#register {
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+#right-box {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  text-decoration-line: underline;
+}
+#reminder {
+  padding-top: 1px;
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 170px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #002176;
+}
+#comingBox {
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 85px;
+}
+
+#coming {
+  padding-top: 20px;
+  color: #002176;
+  font-size: 18px;
+}
+
+#view {
+  line-height: 28px;
+  text-align: center;
+  position: absolute;
+  left: 188px;
+  top: 386px;
+}
+
+#parks {
+  position: absolute;
+  left: 165px;
+  top: 475px;
+}
+
+.parkImages {
+  margin-left: 40px;
+}
+
+.underPark {
+  position: absolute;
+  font-size: 18px;
+}
+
+#irvine {
+  left: 80px;
+}
+#hamilton {
+  left: 320px;
+}
+
+#guatama {
+  left: 555px;
+}
+
+#mostAdvice {
+  position: absolute;
+  left: 190px;
+  top: 700px;
+}
+
+#advice {
+  position: absolute;
+  left: 165px;
+  top: 475px;
+}
+.inAdvice {
+  position: absolute;
+  font-size: 15px;
+  line-height: 16px;
+  width: 210px;
+  height: 118px;
+  background-color: #f1ff9d;
+  left: 40px;
+  top: 310px;
+  text-align: center;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-weight: 600;
+}
+
+#inAdvice2 {
+  margin-left: 300px;
+}
+
+#inAdvice3 {
+  margin-left: 600px;
+}
+
+#inAdvice4 {
+  margin-left: 900px;
 }
