@@ -60,19 +60,19 @@
   <p id="blogTitle">{{ item.name }}: Tittle</p>
   <p id="blogMessage">{{ item.message }}</p>
 </div>
-<div id="wisdomBox">
 
-</div>
 
 <form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
-  <div class="form-group">
-    <label for="message"> Name</label> <br />
-    <input type="text" name="name" class="form-control" ngModel />
-  </div>
-  <div class="form-group">
-    <label for="message"> Message</label> <br />
-    <input type="text" name="message" class="form-control" ngModel />
-  </div>
-  <pre></pre>
-  <button type="submit">Add Blog</button>
-</form>
+<div id="wisdomBox">
+  <p id="wisdomLabel">Feel Free to add your own wisdom below here!</p>
+
+  <label for="message"> Name</label> <br />
+  <input id="titleBox" type="text" name="name" ngModel />
+
+  <label for="message"> Message</label> <br />
+  <input  type="text" name="message" ngModel />
+</div>
+
+<button type="submit">Add Blog</button>
+
+

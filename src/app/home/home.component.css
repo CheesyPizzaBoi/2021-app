@@ -1,11 +1,11 @@
 #table {
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-bottom: -8px;
   width: 150px;
-  height: 100vh;
   background-color: #002176;
-  float: left;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .tab {

@@ -1,11 +1,11 @@
 #table {
-  position: absolute;
-  left: 0px;
-  top: 0px;
   width: 150px;
-  height: 100vh;
   background-color: #002176;
-  float: left;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .tab {
@@ -205,8 +205,35 @@
   width: 743px;
   height: 100px;
   left: 296px;
-  top: 806px;
+  top: 700px;
 
   background: #f1ff9d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#wisdomLabel {
+  position: absolute;
+width: 361px;
+height: 25px;
+left: 50px;
+top: 0px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+text-decoration-line: underline;
+}
+
+#titleBox {
+  position: absolute;
+width: 693px;
+height: 21px;
+/* left: 321px; */
+/* top: 829px; */
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 100px;
 }
