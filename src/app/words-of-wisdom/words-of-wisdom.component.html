@@ -10,11 +10,11 @@
     <p class="iconText">Profile</p>
   </div>
 
-  <div class="tab" >
+  <div class="tab" id="homeTab">
     <a routerLink="/home">
       <img class="icons" src="../../assets/white-paw.png" />
     </a>
-    <p class="iconText" id="homeText">Home Page</p>
+    <p class="iconText">Home Page</p>
   </div>
 
   <div class="tab" id="wordsTab">
@@ -32,64 +32,47 @@
   </div>
 </div>
 
-<div id="companyname">
-  <h1>Pet Guardian</h1>
+<p id="company">Pet Guardian</p>
+
+<p id="wisdom">Words of Wisdom</p>
+
+<div id="right-box">
+  <p>Daily Reminders</p>
+  <div id="reminder">
+    <p>8:00 AM, Light Breakfast</p>
+    <p>12:00 PM, Lunch</p>
+    <p>3:00 PM, Dinner</p>
+    <p>7:00 PM, Snacks</p>
+  </div>
+  <p>Coming Up</p>
+  <div id="comingBox">
+    <p id="coming">Check in with Mary Lee 02/19/2022</p>
+  </div>
 </div>
 
-<form #add="ngForm" (ngSubmit)="create_Newemployee(add)" >
+<div id="search">
+  <p id="searchText">Insert any key words you would like to search for:</p>
+  <input type="text" placeholder="Search..." id="searchBar" />
+</div>
+
+<div id="postBox" *ngFor="let item of messages">
+  <img id="picture" src="../../assets/words/harry.jpg" />
+  <p id="blogTitle">{{ item.name }}: Tittle</p>
+  <p id="blogMessage">{{ item.message }}</p>
+</div>
+<div id="wisdomBox">
+
+</div>
+
+<form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
   <div class="form-group">
-      <label for="message"> Name</label> <br />
-      <input type="text" name="name" class="form-control" ngModel />
+    <label for="message"> Name</label> <br />
+    <input type="text" name="name" class="form-control" ngModel />
   </div>
   <div class="form-group">
-      <label for="message"> Message</label> <br />
-      <input type="text" name="message" class="form-control" ngModel />
-</div>
+    <label for="message"> Message</label> <br />
+    <input type="text" name="message" class="form-control" ngModel />
+  </div>
   <pre></pre>
-  <button type="submit">
-      Add Blog
-  </button>
-  
+  <button type="submit">Add Blog</button>
 </form>
-
-<div>
-  <h1 id="blogPost" *ngFor = "let item of messages">
-      Name: {{item.name}}
-      <br>
-      BlogPost: {{item.message}}
-  </h1>
-
-  
-</div>
-
-<div id="reminders">
-  <h1>Daily reminders</h1>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 1</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 2</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 3</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/feeding-alarm">feeding alarm 4</a>
-  </div>
-</div>
-
-<div id="comingup">
-  <h1>Coming up</h1>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 1</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 2</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 3</a>
-  </div>
-  <div class="textreminders">
-    <a routerLink="/play-dates">playdates 4</a>
-  </div>
-</div>

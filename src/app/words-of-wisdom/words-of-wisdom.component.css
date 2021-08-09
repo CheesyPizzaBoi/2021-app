@@ -1,140 +1,11 @@
-
-/* #onlytable {
-    position: relative;
-    height: 1350px;
-    width: 150px;
-}
-
-
-td {
-    border: 3px solid black
-}
-
-#companyname {
-    position: relative;
-    margin-top: -1300px;
-    margin-left: 300px;
-}
-
-#overview {
-    position: relative;
-    margin-top: -450px;
-    margin-left: 900px;
-    width: 300px;
-    height: 157px
-}
-
-#parks {
-    position: relative;
-    margin-top: 250px;
-    margin-left: 300px;
-}
-
-#advice {
-    position: relative;
-    margin-top: 500px;
-    margin-left: 300px;
-}
-
-#reminders {
-    float: right;
-    position: absolute;
-    margin-top: -950px;
-    margin-left: 1350px;
-    width: 300px;
-    
-}
-
-#comingup {
-    position: absolute;
-    float: right;
-    margin-left: 1350px;
-    margin-top: -650px;
-}
-
-.taskimage {
-    width: 100px;
-    height: 100px;
-    margin-left: 20px;
-}
-
-#taskimagewhiteball {
-    width: 90px;
-    height: 90px;
-    margin-left: 25px;
-}
-
-#bluepawhome {
-    width: 90px;
-    height: 90px;
-    margin-left: 25px;
-}
-
-#dogregis {
-    width: 152px;
-    height: 147.3px;
-    background-color: yellow;
-    position: relative;
-    top: -165px;
-    left: 250px;
-    text-align: center;
-}
-
-.parkss {
-    width: 152px;
-    height: 147.3px;
-}
-
-#park1 {
-    position: absolute;
-    top: 50px;
-    left: 0px;
-}
-
-#park2 {
-    position: absolute;
-    top: 50px;
-    left: 200px;
-}
-
-#park3 {
-    position: absolute;
-    top: 50px;
-    left: 400px;
-}
-
-#park4 {
-    position: absolute;
-    top: 50px;
-    left: 600px;
-}
-
-#park5 {
-    position: absolute;
-    top: 250px;
-    left: 0px;
-}
-
-#park6 {
-    position: absolute;
-    top: 250px;
-    left: 200px;
-}
-
-#park7 {
-    position: absolute;
-    top: 250px;
-    left: 400px;
-}
- */
-
- #table {
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-bottom: -8px;
+#table {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 150px;
   height: 100vh;
   background-color: #002176;
+  float: left;
 }
 
 .tab {
@@ -176,36 +47,166 @@ td {
   text-align: center;
 }
 
-#words, #alarm {
-    font-size: 17px;
+#words,
+#alarm {
+  font-size: 17px;
+}
+
+#words {
+  color: #002176;
 }
 
 #wordsTab {
-    background-color: #F1FF9D;
-}
-#words {
-    color: #002176;
+  background-color: #f1ff9d;
 }
 
-#blogPost {
-  background-color: aqua;
-  padding-bottom: 20px;
+#company {
+  position: absolute;
+  display: inline-block;
+  text-decoration: underline;
+  font-family: "Roboto";
+  left: 222px;
+  top: 10px;
+  font-size: 48px;
+  font-weight: bold;
 }
 
-
-#reminders {
-  position: relative;
-  top: -1250px;
-  left: 1400px;
+#wisdom {
+  position: absolute;
+  left: 541px;
+  top: 110px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-decoration-line: underline;
 }
 
-#comingup {
-  position: relative;
-  top: -1150px;
-  left: 1400px;
+#search {
+  position: absolute;
+  width: 743px;
+  height: 65px;
+  left: 296px;
+  top: 215px;
+
+  background: #f1ff9d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#companyname {
-  bottom: 6666px;
-  left: 50px;
+#searchText {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+}
+
+#searchBar {
+  position: absolute;
+  width: 693px;
+  height: 17px;
+  left: 25px;
+  top: 31px;
+
+  background: #ffffff;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+
+#postBox {
+  position: absolute;
+  width: 743px;
+  height: 78px;
+  left: 296px;
+  top: 312px;
+
+  background: #f1ff9d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.055);
+}
+
+#picture {
+  position: absolute;
+  width: 51px;
+  height: 50px;
+  left: 30px;
+  top: 15px;
+
+  border-radius: 100px;
+}
+
+#blogTitle {
+  position: absolute;
+  left: 150px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 535;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration-line: underline;
+}
+
+#blogMessage {
+  position: absolute;
+  width: 622px;
+  height: 56px;
+  left: 150px;
+  top: 23px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#right-box {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  text-decoration-line: underline;
+}
+#reminder {
+  padding-top: 1px;
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 170px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #002176;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#comingBox {
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 85px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#coming {
+  padding-top: 20px;
+  color: #002176;
+  font-size: 18px;
+}
+
+#wisdomBox {
+  position: absolute;
+  width: 743px;
+  height: 100px;
+  left: 296px;
+  top: 806px;
+
+  background: #f1ff9d;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
