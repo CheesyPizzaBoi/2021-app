@@ -9,40 +9,30 @@ import * as firebase from "firebase";
   styleUrls: ["./words-of-wisdom.component.css"],
 })
 export class WordsOfWisdomComponent implements OnInit {
-  title = "Angular CLI Template";
-
-  
   courses: any[];
-  messages: { id: string; message: any; }[];
+  messages: { id: string; message: any }[];
 
-
-  constructor(public fireservices: AngularFirestore) {
-
-  }
+  constructor(public fireservices: AngularFirestore) {}
 
   ngOnInit() {
-    this.get_AllData().subscribe(data =>{
-      this.messages = data.map(e => {
+    this.get_AllData().subscribe((data) => {
+      this.messages = data.map((e) => {
         return {
           id: e.payload.doc.id,
-          name: e.payload.doc.data()['name'],
-          message: e.payload.doc.data()['message'],
-
+          name: e.payload.doc.data()["name"],
+          message: e.payload.doc.data()["message"],
         };
-      })
+      });
       console.log(this.messages);
-
     });
-
   }
 
   record() {
     let record = {};
-
   }
 
   get_AllData() {
-    return this.fireservices.collection('blogPostCollection').snapshotChanges();
+    return this.fireservices.collection("blogPostCollection").snapshotChanges();
   }
 
   create_Newemployee(add: NgForm) {
@@ -50,7 +40,6 @@ export class WordsOfWisdomComponent implements OnInit {
       name: add.value.name,
       message: add.value.message,
     };
-    return this.fireservices.collection('blogPostCollection').add(value);
+    return this.fireservices.collection("blogPostCollection").add(value);
   }
-
 }

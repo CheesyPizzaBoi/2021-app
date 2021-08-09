@@ -55,24 +55,26 @@
   <input type="text" placeholder="Search..." id="searchBar" />
 </div>
 
-<div id="postBox" *ngFor="let item of messages">
-  <img id="picture" src="../../assets/words/harry.jpg" />
-  <p id="blogTitle">{{ item.name }}: Tittle</p>
-  <p id="blogMessage">{{ item.message }}</p>
+<div id="postDiv">
+  <div id="postBox" *ngFor="let item of messages">
+    <img id="picture" src="../../assets/words/harry.jpg" />
+    <p id="blogTitle">{{ item.name }}: Tittle</p>
+    <p id="blogMessage">{{ item.message }}</p>
+  </div>
 </div>
-
 
 <form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
-<div id="wisdomBox">
-  <p id="wisdomLabel">Feel Free to add your own wisdom below here!</p>
+  <div id="wisdomBox">
+    <p id="wisdomLabel">Feel Free to add your own wisdom below here!</p>
 
-  <label for="message"> Name</label> <br />
-  <input id="titleBox" type="text" name="name" ngModel />
-
-  <label for="message"> Message</label> <br />
-  <input  type="text" name="message" ngModel />
-</div>
-
-<button type="submit">Add Blog</button>
-
-
+    <div id="titleDiv">
+      <label for="message"> Title:</label> <br />
+      <input id="titleBox" type="text" name="name" ngModel />
+    </div>
+    <div id="messageDiv">
+      <label for="message"> Message:</label> <br />
+      <input id="messageBox" type="text" name="message" ngModel />
+    </div>
+    <button id="subButton" type="submit">Add Blog</button>
+  </div>
+</form>
