@@ -5,14 +5,21 @@ import { HomeComponent } from "./home/home.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { WordsOfWisdomComponent } from "./words-of-wisdom/words-of-wisdom.component";
 import { FeedingAlarmComponent } from "./feeding-alarm/feeding-alarm.component";
+import { MaryLeeComponent } from "./mary-lee/mary-lee.component";
+import { VetAssistanceComponent } from "./vet-assistance/vet-assistance.component";
+import { MarkWayneComponent } from "./mark-wayne/mark-wayne.component";
 
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
-   { path: "home", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "profile", component: ProfileComponent },
   { path: "words-of-wisdom", component: WordsOfWisdomComponent },
   { path: "feeding-alarm", component: FeedingAlarmComponent},
+  { path: "mary-lee", component: MaryLeeComponent},
+  { path: "vet-assistance", component: VetAssistanceComponent},
+  { path: "mark-wayne", component: MarkWayneComponent}
+
 
 ];
 

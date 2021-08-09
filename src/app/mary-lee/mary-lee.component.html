@@ -1,0 +1,32 @@
+<h1>You will now be chatting with Dr. Mary. For auto scroll as messages come through to be enabled, please press your right shift key. To disable it to read previoud messages, press your right alt or option key.</h1>
+<div id="div1">
+    <div>
+        <h1 id="blogPost" *ngFor = "let item of messages">
+            {{item.name}}
+            <br>
+            {{item.message}}
+    
+            
+        </h1>
+    </div>
+    
+  </div>
+
+<form #add="ngForm" (ngSubmit)="create_Newemployee(add)" >
+    <div class="form-group">
+        <label for="message"> Message</label> <br />
+        <input type="text" name="message" class="form-control" ngModel />
+  </div>
+    <pre></pre>
+    <button type="submit">
+        Send
+    </button>
+    
+</form>
+
+
+
+  
+
+
+  

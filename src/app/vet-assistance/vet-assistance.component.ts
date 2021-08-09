@@ -15,24 +15,16 @@ import { HttpClient } from "@angular/common/http";
 
 
 
-
-
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"]
+  selector: 'app-vet-assistance',
+  templateUrl: './vet-assistance.component.html',
+  styleUrls: ['./vet-assistance.component.css']
 })
-
-export class AppComponent {
-  title = "Angular CLI Template";
-  courses: any[];
-
- 
+export class VetAssistanceComponent implements OnInit {
+  constructor() { }
   
-  constructor() {}
-
   ngOnInit() {
-    
+  
 
   }
   
