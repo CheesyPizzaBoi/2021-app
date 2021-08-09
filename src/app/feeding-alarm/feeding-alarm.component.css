@@ -1,10 +1,11 @@
 #table {
-  margin-left: -8px;
-  margin-top: -8px;
-  margin-bottom: -8px;
   width: 150px;
-  height: 100vh;
   background-color: #002176;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .tab {
@@ -51,44 +52,166 @@
   font-size: 17px;
 }
 
-#profileTab {
+#alarmTab {
   background-color: #f1ff9d;
 }
 #alarm {
   color: #002176;
 }
 
-.taskimage {
-  width: 100px;
-  height: 100px;
-  margin-left: 20px;
+#company {
+  display: inline-block;
+  text-decoration: underline;
+  font-family: "Roboto";
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 195px;
 }
 
-#taskimagewhiteball {
-  width: 90px;
-  height: 90px;
-  margin-left: 25px;
+#right-box {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  text-decoration-line: underline;
+}
+#reminder {
+  padding-top: 1px;
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 170px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #002176;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#comingBox {
+  background-color: #f1ff9d;
+  width: 245px;
+  height: 85px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#bluepawhome {
-  width: 90px;
-  height: 90px;
-  margin-left: 25px;
+#coming {
+  padding-top: 20px;
+  color: #002176;
+  font-size: 18px;
 }
 
-#reminders {
+#feedingTitle {
+  position: absolute;
+  left: 768px;
+  top: 133px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+#alarmBox {
+  position: absolute;
+  width: 580px;
+  height: 550px;
+  left: 630px;
+  top: 273px;
+
+  background: rgba(241, 255, 157, 0.99);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 25px;
+  padding-top: 15px;
+}
+
+.labels {
   position: relative;
-  top: -1250px;
-  left: 1400px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
 }
 
-#comingup {
+#breedInput,
+#numInput,
+#rTime,
+#lTime,
+#weightInput {
+  border: none;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#numInput {
+  width: 539px;
+  height: 47px;
+
+  margin-bottom: 10px;
+}
+
+#lTime,
+#rTime {
   position: relative;
-  top: -1150px;
-  left: 1400px;
+  width: 120px;
+  height: 47px;
+  padding: 10px;
 }
 
-#companyname {
-  bottom: 6666px;
-  left: 50px;
+#dash {
+  position: relative;
+  top: -40px;
+  left: 240px;
+  width: 25px;
+  height: 10px;
+  background-color: black;
+}
+
+#toText {
+  top: -120px;
+  left: 380px;
+}
+
+#rTime {
+  top: -120px;
+  left: 330px;
+}
+
+#lTime {
+  left: 35px;
+}
+
+#from {
+  left: 45px;
+}
+#hours {
+  height: 150px;
+}
+
+#breedInput,
+#weightInput {
+  width: 539px;
+  height: 46px;
+}
+
+#subButton {
+  position: relative;
+  width: 119px;
+  height: 32px;
+  background: #002176;
+  border: none;
+  color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  left: 430px;
+  top: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

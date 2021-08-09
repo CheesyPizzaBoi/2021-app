@@ -3,11 +3,11 @@
     <img id="logoImage" src="../../assets/bi_shield.png" />
   </div>
 
-  <div class="tab" >
+  <div class="tab">
     <a routerLink="/profile">
       <img class="icons" src="../../assets/white-user.png" />
     </a>
-    <p class="iconText" >Profile</p>
+    <p class="iconText" id="profileText">Profile</p>
   </div>
 
   <div class="tab">
@@ -17,14 +17,14 @@
     <p class="iconText">Home Page</p>
   </div>
 
-  <div class="tab" >
+  <div class="tab">
     <a routerLink="/words-of-wisdom">
       <img class="icons" src="../../assets/white-book.png" />
     </a>
     <p class="iconText" id="words">Words of Wisdom</p>
   </div>
 
-  <div class="tab" id="profileTab">
+  <div class="tab" id="alarmTab">
     <a routerLink="/feeding-alarm">
       <img class="icons" src="../../assets/blue-clock.png" />
     </a>
@@ -32,17 +32,43 @@
   </div>
 </div>
 
-<div>
+<p id="company">Pet Guardian</p>
+
+<div id="right-box">
+  <p>Daily Reminders</p>
+  <div id="reminder">
+    <p>8:00 AM, Light Breakfast</p>
+    <p>12:00 PM, Lunch</p>
+    <p>3:00 PM, Dinner</p>
+    <p>7:00 PM, Snacks</p>
+  </div>
+  <p>Coming Up</p>
+  <div id="comingBox">
+    <p id="coming">Check in with Mary Lee 02/19/2022</p>
+  </div>
+</div>
+
+<p id="feedingTitle">Feeding Alarm</p>
+
+<div id="alarmBox">
   <form #alarm="ngForm" (ngSubmit)="submit(alarm)">
-    <div class="form-group">
-      <label for="num"> Number</label> <br />
-      <input type="number" name="num" class="form-control" ngModel />
+    <p class="labels">Phone Number:</p>
+    <input id="numInput" type="number" name="num" ngModel />
+    <div id="hours">
+      <p class="labels">Your Available Hours:</p>
+
+      <p id="from" class="labels">Available From...</p>
+      <input id="lTime" type="time" name="av1" ngModel />
+      <div id="dash"></div>
+      <p id="toText" class="labels">To...</p>
+
+      <input id="rTime" type="time" name="av2" ngModel />
     </div>
-    <div class="form-group">
-      <label for="message"> Message</label> <br />
-      <input type="text" name="message" class="form-control" ngModel />
-    </div>
-    <pre></pre>
-    <button class="btn btn-primary" type="submit">Submit</button>
+
+    <p class="labels">Breed:</p>
+    <input id="breedInput" type="text" name="breed" ngModel />
+    <p class="labels">Weight</p>
+    <input id="weightInput" type="text" name="weight" ngModel />
+    <button id="subButton" type="submit">Submit</button>
   </form>
 </div>
