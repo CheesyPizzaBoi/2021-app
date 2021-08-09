@@ -71,19 +71,6 @@
   font-weight: bold;
 }
 
-#wisdom {
-  position: absolute;
-  left: 541px;
-  top: 110px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  text-decoration-line: underline;
-}
-
 #right-box {
   position: absolute;
   top: 100px;
@@ -105,19 +92,32 @@
 }
 
 #search {
-  position: absolute;
+  position: relative;
   width: 743px;
   height: 65px;
-  left: 296px;
-  top: 215px;
+  left: 550px;
+  top: 105px;
 
   background: #f1ff9d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#wisdom {
+  position: relative;
+  /* left: 541px; */
+  top: 110px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
 #searchText {
-  position: absolute;
-  top: 0px;
+  position: relative;
+  top: 8px;
   left: 30px;
   font-family: Roboto;
   font-style: normal;
@@ -142,10 +142,11 @@
 #postBox {
   width: 743px;
   height: 78px;
-
+  position: relative;
   margin-top: 25px;
   background: #f1ff9d;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  left: 250px;
 }
 
 #picture {
@@ -213,11 +214,11 @@
 }
 
 #postDiv {
-  position: absolute;
-  width: 790px;
+  position: relative;
+  width: 1050px;
   height: 478px;
-  left: 295px;
-  top: 284px;
+  left: 300px;
+  top: 110px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -254,19 +255,23 @@
 
 #subButton {
   position: absolute;
-  top: 165px;
+  top: 160px;
   left: 290px;
 
   width: 150px;
-  height: 21px;
+  height: 25px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #002176;
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 #wisdomBox {
   position: absolute;
   width: 743px;
   height: 200px;
-  left: 296px;
+  left: 580px;
   top: 780px;
 
   background: #f1ff9d;
@@ -281,4 +286,8 @@
   width: 675px;
   height: 17px;
   border: none;
+}
+
+#mainBox {
+  margin-left: 100px;
 }

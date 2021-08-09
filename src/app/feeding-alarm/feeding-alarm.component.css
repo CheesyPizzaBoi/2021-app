@@ -60,13 +60,14 @@
 }
 
 #company {
+  position: absolute;
   display: inline-block;
   text-decoration: underline;
   font-family: "Roboto";
+  left: 222px;
+  top: 10px;
   font-size: 48px;
   font-weight: bold;
-  margin-top: 30px;
-  margin-left: 195px;
 }
 
 #right-box {
