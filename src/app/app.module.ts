@@ -13,6 +13,8 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { VetAssistComponent } from './vet-assist/vet-assist.component';
+import { MessagesComponent } from './vet-assist/messages/messages.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
     ProfileComponent,
     WordsOfWisdomComponent,
     FeedingAlarmComponent,
+    VetAssistComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
