@@ -64,7 +64,7 @@
 </div>
 
 <div id="postDiv">
-  <div id="postBox" *ngFor="let item of messages">
+  <div id="postBox" *ngFor="let item of messages.reverse()">
     <img id="picture" src="../../assets/words/harry.jpg" />
     <p id="blogTitle">Title: {{ item.name }}</p>
     <p id="blogMessage">{{ item.message }}</p>

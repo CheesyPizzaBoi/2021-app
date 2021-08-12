@@ -41,9 +41,8 @@ export class WordsOfWisdomComponent implements OnInit {
       name: add.value.title,
       message: add.value.message,
     };
-    this.http.post("http://localhost:3000/send", value).subscribe(() => {
-      console.log(value);
-    });
+    return this.fireservices.collection("blogPostCollection").add(value);
+
 
   }
 }
