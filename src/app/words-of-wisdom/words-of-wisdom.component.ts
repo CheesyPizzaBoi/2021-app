@@ -3,6 +3,7 @@ import { AngularFireDatabase } from "@angular/fire/database";
 import { AngularFirestore } from "@angular/fire/firestore";
 import { NgForm } from "@angular/forms";
 import * as firebase from "firebase";
+import { HttpClient } from "@angular/common/http";
 @Component({
   selector: "app-words-of-wisdom",
   templateUrl: "./words-of-wisdom.component.html",
@@ -12,7 +13,7 @@ export class WordsOfWisdomComponent implements OnInit {
   courses: any[];
   messages: { id: string; message: any }[];
 
-  constructor(public fireservices: AngularFirestore) {}
+  constructor(public fireservices: AngularFirestore, private http: HttpClient) {}
 
   ngOnInit() {
     this.get_AllData().subscribe((data) => {
@@ -37,9 +38,12 @@ export class WordsOfWisdomComponent implements OnInit {
 
   create_Newemployee(add: NgForm) {
     let value = {
-      name: add.value.name,
+      name: add.value.title,
       message: add.value.message,
     };
-    return this.fireservices.collection("blogPostCollection").add(value);
+    this.http.post("http://localhost:3000/send", value).subscribe(() => {
+      console.log(value);
+    });
+
   }
 }
