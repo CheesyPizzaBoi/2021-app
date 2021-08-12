@@ -8118,6 +8118,11 @@
     "hash-base" "^3.0.0"
     "inherits" "^2.0.1"
 
+"roboto-fontface@^0.10.0":
+  "integrity" "sha512-OlwfYEgA2RdboZohpldlvJ1xngOins5d7ejqnIBWr9KaMxsnBqotpptRXTyfNRLnFpqzX6sTDt+X+a+6udnU8g=="
+  "resolved" "https://registry.npmjs.org/roboto-fontface/-/roboto-fontface-0.10.0.tgz"
+  "version" "0.10.0"
+
 "rollup@2.38.4":
   "integrity" "sha512-B0LcJhjiwKkTl79aGVF/u5KdzsH8IylVfV56Ut6c9ouWLJcUK17T83aZBetNYSnZtXf2OHD4+2PbmRW+Fp5ulg=="
   "resolved" "https://registry.npmjs.org/rollup/-/rollup-2.38.4.tgz"

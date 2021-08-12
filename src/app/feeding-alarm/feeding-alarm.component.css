@@ -1,5 +1,5 @@
 #table {
-  width: 150px;
+  width: 148px;
   background-color: #002176;
   position: fixed;
   height: 100%;
@@ -10,7 +10,7 @@
 
 .tab {
   width: auto;
-  height: 150px;
+  height: 109px;
   background-color: #002176;
   border-color: white;
   border-width: 1.5px;
@@ -25,16 +25,16 @@
   border-top-color: #002176;
 }
 #logoImage {
-  width: 115px;
-  height: 115px;
+  width: 86px;
+  height: 88px;
   margin: auto;
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .icons {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   margin: auto;
   display: block;
   margin-top: 15px;
@@ -42,9 +42,19 @@
 
 .iconText {
   color: white;
-  font-size: 24px;
-  font-family: Roboto;
+  font-size: 18px;
+  font-family: "Roboto";
   text-align: center;
+}
+
+#right-box {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+  text-decoration-line: underline;
 }
 
 #words,
@@ -58,27 +68,17 @@
 #alarm {
   color: #002176;
 }
-
 #company {
   position: absolute;
   display: inline-block;
   text-decoration: underline;
   font-family: "Roboto";
-  left: 222px;
-  top: 10px;
+  left: 203px;
+  top: -10px;
   font-size: 48px;
   font-weight: bold;
 }
 
-#right-box {
-  position: absolute;
-  top: 100px;
-  right: 100px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 24px;
-  text-decoration-line: underline;
-}
 #reminder {
   padding-top: 1px;
   background-color: #f1ff9d;
@@ -104,8 +104,8 @@
 
 #feedingTitle {
   position: absolute;
-  left: 768px;
-  top: 133px;
+  left: 535px;
+  top: 100px;
 
   font-family: Roboto;
   font-style: normal;
@@ -120,8 +120,8 @@
   position: absolute;
   width: 580px;
   height: 550px;
-  left: 630px;
-  top: 273px;
+  left: 360px;
+  top: 200px;
 
   background: rgba(241, 255, 157, 0.99);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -146,6 +146,7 @@
   border: none;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 10px;
 }
 
 #numInput {

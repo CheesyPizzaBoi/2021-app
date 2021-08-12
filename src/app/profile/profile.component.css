@@ -1,5 +1,5 @@
 #table {
-  width: 150px;
+  width: 148px;
   background-color: #002176;
   position: fixed;
   height: 100%;
@@ -10,7 +10,7 @@
 
 .tab {
   width: auto;
-  height: 150px;
+  height: 109px;
   background-color: #002176;
   border-color: white;
   border-width: 1.5px;
@@ -25,16 +25,16 @@
   border-top-color: #002176;
 }
 #logoImage {
-  width: 115px;
-  height: 115px;
+  width: 86px;
+  height: 88px;
   margin: auto;
   display: block;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .icons {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   margin: auto;
   display: block;
   margin-top: 15px;
@@ -42,8 +42,8 @@
 
 .iconText {
   color: white;
-  font-size: 24px;
-  font-family: Roboto;
+  font-size: 18px;
+  font-family: 'Roboto';
   text-align: center;
 }
 
@@ -72,14 +72,14 @@
 #profileBoxes {
   width: 1800px;
   height: 800px;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .profileBox {
   width: 553px;
   height: 580px;
   float: left;
-  margin-right: 150px;
+  margin-right: 45px;
   background: rgba(241, 255, 157, 0.99);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -87,7 +87,9 @@
   padding-top: 29px;
 }
 #leftBox {
-  margin-left: 250px;
+  margin-left: 190px;
+  width: 540px;
+  height: 580px;
 }
 
 .profileText,
