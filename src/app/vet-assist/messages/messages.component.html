@@ -1,83 +1,68 @@
 <div id="table">
-  <div id="logo" class="tab">
-    <img id="logoImage" src="../../assets/icons/bi_shield.png" />
-  </div>
-
-  <div class="tab">
-    <a routerLink="/profile">
-      <img class="icons" src="../../assets/icons/white-user.png" />
-    </a>
-    <p class="iconText">Profile</p>
-  </div>
-
-  <div class="tab" id="homeTab">
+  <div class="tab" id="top">
     <a routerLink="/home">
-      <img class="icons" src="../../assets/icons/white-paw.png" />
+      <img class="icons" src="../../assets/icons/home.png" />
     </a>
-    <p class="iconText" id="homeText">Home Page</p>
   </div>
 
   <div class="tab">
     <a routerLink="/words-of-wisdom">
-      <img class="icons" src="../../assets/icons/white-book.png" />
+      <img class="icons" src="../../assets/icons/words.png" />
     </a>
-    <p class="iconText" id="words">Words of Wisdom</p>
   </div>
 
   <div class="tab">
     <a routerLink="/feeding-alarm">
-      <img class="icons" src="../../assets/icons/white-clock.png" />
+      <img
+        class="icons"
+        id="selected"
+        src="../../assets/icons/alarm_selected.png"
+      />
     </a>
-    <p class="iconText" id="alarm">Feeding Alarm</p>
   </div>
 
-  <div class="tab" id="vetTab">
+  <div class="tab">
     <a routerLink="/vet-assist">
-      <img class="icons" src="../../assets/icons/listening-heart-blue.png" />
+      <img class="icons" src="../../assets/icons/vet.png" />
     </a>
-    <p class="iconText" id="vetText">Vet Assist</p>
   </div>
 </div>
 
-<p id="company">Pet Guardian</p>
+<img id="taskBar" src="../../assets/homePage/tasks2.png" />
 
-<div id="right-box">
-  <p>Daily Reminders</p>
-  <div id="reminder">
-    <p>8:00 AM, Light Breakfast</p>
-    <p>12:00 PM, Lunch</p>
-    <p>3:00 PM, Dinner</p>
-    <p>7:00 PM, Snacks</p>
-  </div>
-  <p>Coming Up</p>
-  <div id="comingBox">
-    <p id="coming">Check in with Mary Lee 02/19/2022</p>
-  </div>
+<div id="profile">
+  <p id="name">Sadman Amin</p>
+  <p id="role">Developer</p>
+  <img src="../../assets/homePage/profile.png" />
 </div>
 
 <div id="messagesDiv">
-  <img id="vetPic" src="../../../assets/vets/vet1.jpg" />
-  <p id="docName">Mary Lee</p>
   <div id="messagesContainer" *ngFor="let message of inMessages">
+    <img id="msgPic" src="../../../assets/homePage/profile.png">
+
     <div class="rightMessage">
       <p>
         {{ message }}
       </p>
+
     </div>
+
+    <img  id="msgPic2" src="../../../assets/vets/botPic.png">
+
     <div class="leftMessage">
-      <p>Thank you for reaching out to me, I will reply to your question as soon as possible!
+      <p>
+        Thank you for reaching out to me, I will reply to your question as soon
+        as possible!
       </p>
     </div>
   </div>
 
-  <div id="messageSend">
-    <p id="sendMess">Send a Message</p>
-    <input id="messageBox" type="text" [(ngModel)]="message" />
-    <input
-      (click)="addMessage()"
-      type="image"
-      id="sendButton"
-      src="../../../assets/vets/send.png"
-    />
-  </div>
+  <input id="messageBox" type="text" [(ngModel)]="message"     placeholder="Message Mary Lee"
+  />
+  <input
+    (click)="addMessage()"
+    type="image"
+    id="sendButton"
+    src="../../../assets/vets/send.png"
+  />
 </div>

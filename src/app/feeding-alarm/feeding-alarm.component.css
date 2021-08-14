@@ -1,6 +1,6 @@
 #table {
-  width: 148px;
-  background-color: #002176;
+  width: 126px;
+  background-color: #4356a6;
   position: fixed;
   height: 100%;
   top: 0;
@@ -8,43 +8,25 @@
   overflow-x: hidden;
 }
 
-.tab {
-  width: auto;
-  height: 109px;
-  background-color: #002176;
-  border-color: white;
-  border-width: 1.5px;
-  border-style: solid;
-  border-left-color: #002176;
+#top {
+  margin-top: 80px;
 }
 
-#logo {
-  background-color: white;
-  border-right-color: #002176;
-  border-bottom-color: #002176;
-  border-top-color: #002176;
-}
-#logoImage {
-  width: 86px;
-  height: 88px;
-  margin: auto;
-  display: block;
-  margin-top: 10px;
+.tab {
+  width: auto;
+  height: 150px;
 }
 
 .icons {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  display: block;
-  margin-top: 15px;
+  position: relative;
+  left: 40px;
+  top: 30px;
 }
 
-.iconText {
-  color: white;
-  font-size: 18px;
-  font-family: "Roboto";
-  text-align: center;
+#selected {
+  left: 25px;
+  position: relative;
+  top: 30px;
 }
 
 #right-box {
@@ -57,73 +39,66 @@
   text-decoration-line: underline;
 }
 
-#words,
-#alarm {
-  font-size: 17px;
-}
-
-#alarmTab {
-  background-color: #f1ff9d;
-}
-#alarm {
-  color: #002176;
-}
-#company {
+#taskBar {
   position: absolute;
-  display: inline-block;
-  text-decoration: underline;
-  font-family: "Roboto";
-  left: 203px;
-  top: -10px;
-  font-size: 48px;
-  font-weight: bold;
+  top: 20px;
+  left: 150px;
+  height: 1020px;
+  width: 258px;
 }
 
-#reminder {
-  padding-top: 1px;
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 170px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #002176;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#comingBox {
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 85px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+#profile {
+  position: absolute;
+  right: 90px;
+  top: 40px;
 }
 
-#coming {
-  padding-top: 20px;
-  color: #002176;
+#name,
+#role {
+  position: absolute;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
 }
+
+#name {
+  width: 130px;
+  right: 85px;
+}
+#role {
+  right: 120px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* anything above here is on every page */
 
 #feedingTitle {
   position: absolute;
-  left: 535px;
-  top: 100px;
+  left: 850px;
+  top: 180px;
 
-  font-family: Roboto;
+  font-family: Hind;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
   text-decoration-line: underline;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 #alarmBox {
   position: absolute;
   width: 580px;
   height: 550px;
-  left: 360px;
-  top: 200px;
+  left: 670px;
+  top: 300px;
 
-  background: rgba(241, 255, 157, 0.99);
+  background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-left: 25px;
   padding-top: 15px;
@@ -204,7 +179,7 @@
   position: relative;
   width: 119px;
   height: 32px;
-  background: #002176;
+  background: #4356A6;
   border: none;
   color: white;
   font-family: Roboto;

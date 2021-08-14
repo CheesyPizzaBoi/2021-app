@@ -1,6 +1,6 @@
 #table {
-  width: 148px;
-  background-color: #002176;
+  width: 126px;
+  background-color: #4356a6;
   position: fixed;
   height: 100%;
   top: 0;
@@ -8,43 +8,25 @@
   overflow-x: hidden;
 }
 
-.tab {
-  width: auto;
-  height: 109px;
-  background-color: #002176;
-  border-color: white;
-  border-width: 1.5px;
-  border-style: solid;
-  border-left-color: #002176;
+#top {
+  margin-top: 80px;
 }
 
-#logo {
-  background-color: white;
-  border-right-color: #002176;
-  border-bottom-color: #002176;
-  border-top-color: #002176;
-}
-#logoImage {
-  width: 86px;
-  height: 88px;
-  margin: auto;
-  display: block;
-  margin-top: 10px;
+.tab {
+  width: auto;
+  height: 150px;
 }
 
 .icons {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  display: block;
-  margin-top: 15px;
+  position: relative;
+  left: 40px;
+  top: 30px;
 }
 
-.iconText {
-  color: white;
-  font-size: 18px;
-  font-family: 'Roboto';
-  text-align: center;
+#selected {
+  left: 25px;
+  position: relative;
+  top: 30px;
 }
 
 #right-box {
@@ -57,57 +39,49 @@
   text-decoration-line: underline;
 }
 
-#words,
-#alarm {
-  font-size: 17px;
+#taskBar {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  height: 1020px;
+  width: 258px;
 }
 
-#vetTab {
-  background-color: #f1ff9d;
-}
-#vetText {
-  color: #002176;
-}
-
-#company {
-  display: inline-block;
-  text-decoration: underline;
-  font-family: "Roboto";
-  font-size: 48px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 195px;
+#profile {
+  position: absolute;
+  right: 90px;
+  top: 40px;
 }
 
-#reminder {
-  padding-top: 1px;
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 170px;
+#name,
+#role {
+  position: absolute;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
-  color: #002176;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#comingBox {
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 85px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 29px;
+  letter-spacing: 0.04em;
 }
 
-#coming {
-  padding-top: 20px;
-  color: #002176;
-  font-size: 18px;
+#name {
+  width: 130px;
+  right: 85px;
 }
+#role {
+  right: 120px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* anything above here is on every page */
 
 #messagesDiv {
   position: absolute;
   width: 800px;
   height: 653px;
-  left: 240px;
-  top: 150px;
+  left: 570px;
+  top: 250px;
 }
 
 #messagesContainer {
@@ -118,22 +92,6 @@
 
 #messagesContainer::-webkit-scrollbar {
   display: none;
-}
-
-#vetPic {
-  position: relative;
-  width: 150px;
-  height: 116.78px;
-  left: 40%;
-}
-#docName {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  margin-top: 4px;
 }
 
 .rightMessage,
@@ -158,26 +116,29 @@
   text-align: center;
 }
 .rightMessage {
-  background: rgba(241, 255, 157, 0.99);
   float: right;
+  color: #ffffff;
+  background: #4356a6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#msgPic {
+  position: absolute;
+  right: -90px;
+  top: -5px;
+}
+
+#msgPic2 {
+  position: absolute;
+  left: -90px;
+  top: 80px;
+  width: 61;
+  height: 88px;
 }
 
 .leftMessage {
   background: #e0e0e0;
   float: left;
-}
-
-#messageSend {
-  position: absolute;
-  width: 743px;
-  height: 94px;
-  top: 530px;
-  text-align: center;
-  background: #f1ff9d;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 10px;
-  padding-top: 5px;
-  border-radius: 5px;
 }
 
 #sendMess {
@@ -190,18 +151,33 @@
 }
 
 #messageBox {
-  width: 693px;
-  height: 21px;
-  border: none;
-  background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  width: 690px;
+  height: 41px;
+  left: 50px;
+  top: 667px;
+
+  background: #f0f0f0;
   border-radius: 100px;
+  border: none;
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 20px;
 }
 
 #sendButton {
-  position: relative;
-  top: -55px;
-  left: 58%;
+  position: absolute;
+  top: 655px;
+  left: 800px;
   width: 60px;
   height: 60px;
 }

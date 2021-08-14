@@ -1,45 +1,70 @@
 import { Component, OnInit } from "@angular/core";
-import { AngularFireDatabase } from "@angular/fire/database";
-import { AngularFirestore } from "@angular/fire/firestore";
+// import { AngularFireDatabase } from "@angular/fire/database";
+// import { AngularFirestore } from "@angular/fire/firestore";
 import { NgForm } from "@angular/forms";
-import * as firebase from "firebase";
+// import * as firebase from "firebase";
+
 @Component({
   selector: "app-words-of-wisdom",
   templateUrl: "./words-of-wisdom.component.html",
   styleUrls: ["./words-of-wisdom.component.css"],
 })
 export class WordsOfWisdomComponent implements OnInit {
-  courses: any[];
-  messages: { id: string; message: any }[];
+  // courses: any[];
+  // messages: { id: string; message: any }[];
 
-  constructor(public fireservices: AngularFirestore) {}
+  postTitle: string = "";
+  postContent: string = "";
 
-  ngOnInit() {
-    this.get_AllData().subscribe((data) => {
-      this.messages = data.map((e) => {
-        return {
-          id: e.payload.doc.id,
-          name: e.payload.doc.data()["name"],
-          message: e.payload.doc.data()["message"],
-        };
-      });
-      console.log(this.messages);
-    });
+  initPost() {
+    var x = document.getElementById("addButton");
+    var y = document.getElementById("addBlog");
+
+    x.style.display = "none";
+    y.style.display = "block";
   }
 
-  record() {
-    let record = {};
+  submit(post: NgForm) {
+    this.postTitle = post.value.postTitle;
+    this.postContent = post.value.postContent;
+    var x = document.getElementById("addButton");
+    var y = document.getElementById("addBlog");
+    x.style.display = "block";
+    y.style.display = "none";
+    var m = document.getElementById("newPost");
+    m.style.display = "block";
   }
 
-  get_AllData() {
-    return this.fireservices.collection("blogPostCollection").snapshotChanges();
-  }
+  constructor() {}
 
-  create_Newemployee(add: NgForm) {
-    let value = {
-      name: add.value.name,
-      message: add.value.message,
-    };
-    return this.fireservices.collection("blogPostCollection").add(value);
-  }
+  ngOnInit() {}
+
+  // ngOnInit() {
+  //   this.get_AllData().subscribe((data) => {
+  //     this.messages = data.map((e) => {
+  //       return {
+  //         id: e.payload.doc.id,
+  //         name: e.payload.doc.data()["name"],
+  //         message: e.payload.doc.data()["message"],
+  //       };
+  //     });
+  //     console.log(this.messages);
+  //   });
+  // }
+
+  // record() {
+  //   let record = {};
+  // }
+
+  // get_AllData() {
+  //   return this.fireservices.collection("blogPostCollection").snapshotChanges();
+  // }
+
+  // create_Newemployee(add: NgForm) {
+  //   let value = {
+  //     name: add.value.name,
+  //     message: add.value.message,
+  //   };
+  //   return this.fireservices.collection("blogPostCollection").add(value);
+  // }
 }

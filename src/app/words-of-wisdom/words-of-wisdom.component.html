@@ -1,89 +1,137 @@
 <div id="table">
-  <div id="logo" class="tab">
-    <img id="logoImage" src="../../assets/icons/bi_shield.png" />
+  <div class="tab" id="top">
+    <a routerLink="/home">
+      <img class="icons" src="../../assets/icons/home.png" />
+    </a>
   </div>
 
   <div class="tab">
-    <a routerLink="/profile">
-      <img class="icons" src="../../assets/icons/white-user.png" />
-    </a>
-    <p class="iconText">Profile</p>
-  </div>
-
-  <div class="tab" id="homeTab">
-    <a routerLink="/home">
-      <img class="icons" src="../../assets/icons/white-paw.png" />
-    </a>
-    <p class="iconText">Home Page</p>
-  </div>
-
-  <div class="tab" id="wordsTab">
     <a routerLink="/words-of-wisdom">
-      <img class="icons" src="../../assets/icons/blue-book.png" />
+      <img
+        class="icons"
+        id="selected"
+        src="../../assets/icons/words_selected.png"
+      />
     </a>
-    <p class="iconText" id="words">Words of Wisdom</p>
   </div>
 
   <div class="tab">
     <a routerLink="/feeding-alarm">
-      <img class="icons" src="../../assets/icons/white-clock.png" />
+      <img class="icons" src="../../assets/icons/alarm.png" />
     </a>
-    <p class="iconText" id="alarm">Feeding Alarm</p>
   </div>
 
   <div class="tab">
     <a routerLink="/vet-assist">
-      <img class="icons" src="../../assets/icons/listening-heart-white.png" />
+      <img class="icons" src="../../assets/icons/vet.png" />
     </a>
-    <p class="iconText" id="vetAssist">Vet Assist</p>
   </div>
 </div>
 
-<p id="company">Pet Guardian</p>
+<img id="taskBar" src="../../assets/homePage/tasks2.png" />
 
-<div id="right-box">
-  <p>Daily Reminders</p>
-  <div id="reminder">
-    <p>8:00 AM, Light Breakfast</p>
-    <p>12:00 PM, Lunch</p>
-    <p>3:00 PM, Dinner</p>
-    <p>7:00 PM, Snacks</p>
-  </div>
-  <p>Coming Up</p>
-  <div id="comingBox">
-    <p id="coming">Check in with Mary Lee 02/19/2022</p>
-  </div>
+<div id="profile">
+  <p id="name">Sadman Amin</p>
+  <p id="role">Developer</p>
+  <img src="../../assets/homePage/profile.png" />
 </div>
 
-<div id="mainBpx">
-<p id="wisdom">Words of Wisdom</p>
+<!-- Anything above here is on every page -->
 
-<div id="search">
-  <p id="searchText">Insert any key words you would like to search for:</p>
-  <input type="text" placeholder="Search..." id="searchBar" />
+<div id="topLeft" class="posts">
+  <img class="smallPic" src="../../assets/words/stacy.png" />
+  <p class="adviceName">Stacy Wang</p>
+  <p class="postTitle">Helping Hand</p>
+  <p class="postMessage">
+    Make sure you give your dog water and do no take them out on a hot day.
+    Their paws will hurt Make sure you give your dog water and do no take them
+    out on a hot day. Their paws will hurt Make sure you give your dog water and
+    do no take them out on a hot day. Their paws will hurt
+  </p>
 </div>
 
-<div id="postDiv">
-  <div id="postBox" *ngFor="let item of messages">
-    <img id="picture" src="../../assets/words/harry.jpg" />
-    <p id="blogTitle">{{ item.name }}: Tittle</p>
-    <p id="blogMessage">{{ item.message }}</p>
+<div id="topRight" class="posts">
+  <img class="smallPic" src="../../assets/words/fernanda.png" />
+  <p class="adviceName">Fernanda Rubio</p>
+  <p class="postTitle">Play Time</p>
+  <p class="postMessage">
+    Make sure you give your dog water and do no take them out on a hot day.
+    Their paws will hurt Make sure you give your dog water and do no take them
+    out on a hot day. Their paws will hurt Make sure you give your dog water and
+    do no take them out on a hot day. Their paws will hurt
+  </p>
+</div>
+
+<img
+  id="addButton"
+  (click)="initPost()"
+  src="../../assets/words/addButton2.png"
+/>
+
+<div id="addBlog">
+  <form #post="ngForm" (ngSubmit)="submit(post)">
+    <input
+      id="blogTitle"
+      placeholder="Title"
+      type="text"
+      ngModel
+      name="postTitle"
+    />
+    <input
+      id="blogContent"
+      placeholder="Write down your own wisdom"
+      type="text"
+      ngModel
+      name="postContent"
+    />
+    <button>
+      <img
+        id="postButton"
+        type="submit"
+        src="../../assets/words/postButton.png"
+      />
+    </button>
+  </form>
+</div>
+
+<div id="newPost" class="posts">
+  <img class="smallPic" src="../../assets/homePage/profile.png" />
+  <p class="adviceName">Sadman Amin</p>
+  <p class="postTitle">{{ postTitle }}</p>
+  <p class="postMessage">
+    {{ postContent }}
+  </p>
+</div>
+
+<!-- <div id="mainBpx">
+  <p id="wisdom">Words of Wisdom</p>
+
+  <div id="search">
+    <p id="searchText">Insert any key words you would like to search for:</p>
+    <input type="text" placeholder="Search..." id="searchBar" />
   </div>
-</div>
 
-<form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
-  <div id="wisdomBox">
-    <p id="wisdomLabel">Feel Free to add your own wisdom below here!</p>
-
-    <div id="titleDiv">
-      <label for="message"> Title:</label> <br />
-      <input id="titleBox" type="text" name="name" ngModel />
+  <div id="postDiv">
+    <div id="postBox" *ngFor="let item of messages">
+      <img id="picture" src="../../assets/words/harry.jpg" />
+      <p id="blogTitle">{{ item.name }}: Tittle</p>
+      <p id="blogMessage">{{ item.message }}</p>
     </div>
-    <div id="messageDiv">
-      <label for="message"> Message:</label> <br />
-      <input id="messageBox" type="text" name="message" ngModel />
-    </div>
-    <button id="subButton" type="submit">Add Blog</button>
   </div>
-</form>
-</div>
+
+  <form #add="ngForm" (ngSubmit)="create_Newemployee(add)">
+    <div id="wisdomBox">
+      <p id="wisdomLabel">Feel Free to add your own wisdom below here!</p>
+
+      <div id="titleDiv">
+        <label for="message"> Title:</label> <br />
+        <input id="titleBox" type="text" name="name" ngModel />
+      </div>
+      <div id="messageDiv">
+        <label for="message"> Message:</label> <br />
+        <input id="messageBox" type="text" name="message" ngModel />
+      </div>
+      <button id="subButton" type="submit">Add Blog</button>
+    </div>
+  </form>
+</div> -->

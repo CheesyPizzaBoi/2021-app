@@ -1,6 +1,6 @@
 #table {
   width: 126px;
-  background-color: #002176;
+  background-color: #4356a6;
   position: fixed;
   height: 100%;
   top: 0;
@@ -8,43 +8,25 @@
   overflow-x: hidden;
 }
 
-.tab {
-  width: auto;
-  height: 109px;
-  background-color: #002176;
-  border-color: white;
-  border-width: 1.5px;
-  border-style: solid;
-  border-left-color: #002176;
+#top {
+  margin-top: 80px;
 }
 
-#logo {
-  background-color: white;
-  border-right-color: #002176;
-  border-bottom-color: #002176;
-  border-top-color: #002176;
-}
-#logoImage {
-  width: 86px;
-  height: 88px;
-  margin: auto;
-  display: block;
-  margin-top: 10px;
+.tab {
+  width: auto;
+  height: 150px;
 }
 
 .icons {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  display: block;
-  margin-top: 15px;
+  position: relative;
+  left: 40px;
+  top: 30px;
 }
 
-.iconText {
-  color: white;
-  font-size: 18px;
-  font-family: "Roboto";
-  text-align: center;
+#selected {
+  left: 25px;
+  position: relative;
+  top: 30px;
 }
 
 #right-box {
@@ -57,21 +39,125 @@
   text-decoration-line: underline;
 }
 
-#words,
-#alarm {
-  font-size: 17px;
-}
-
-#homeTab {
-  background-color: #f1ff9d;
-}
-#homeText {
-  color: #002176;
-}
-
-#task {
+#taskBar {
   position: absolute;
-  left: 200px;
+  top: 20px;
+  left: 150px;
   height: 1020px;
   width: 258px;
+}
+
+#profile {
+  position: absolute;
+  right: 90px;
+  top: 40px;
+}
+
+#name,
+#role {
+  position: absolute;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+
+#name {
+  width: 130px;
+  right: 85px;
+}
+#role {
+  right: 120px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* anything above here is on every page */
+
+#pets {
+  position: absolute;
+  left: 430px;
+  top: 100px;
+}
+
+.petCircles {
+  margin-left: 50px;
+}
+
+#slogan {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+  color: #0077b8;
+}
+
+#addPet {
+  position: absolute;
+  left: 70px;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#luna,
+#mike {
+  position: absolute;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+
+#luna {
+  left: 255px;
+}
+
+#mike {
+  left: 435px;
+}
+
+#parks {
+  position: absolute;
+  left: 434px;
+  top: 340px;
+}
+
+.park {
+  margin-left: 20px;
+}
+
+#parksTitle,
+#adviceTitle {
+  font-family: Hind;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+
+#parksTitle {
+  left: 30px;
+}
+
+#advices {
+  position: absolute;
+  left: 450px;
+  bottom: 30px;
 }

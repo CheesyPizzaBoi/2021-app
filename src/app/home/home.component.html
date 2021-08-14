@@ -1,42 +1,65 @@
 <div id="table">
-  <div id="logo" class="tab">
-    <img id="logoImage" src="../../assets/icons/bi_shield.png" />
-  </div>
-
-  <div class="tab">
-    <a routerLink="/profile">
-      <img class="icons" src="../../assets/icons/white-user.png" />
-    </a>
-    <p class="iconText">Profile</p>
-  </div>
-
-  <div class="tab" id="homeTab">
+  <div class="tab" id="top">
     <a routerLink="/home">
-      <img class="icons" src="../../assets/icons/blue-paw.png" />
+      <img
+        class="icons"
+        id="selected"
+        src="../../assets/icons/home_selected.png"
+      />
     </a>
-    <p class="iconText" id="homeText">Home Page</p>
   </div>
 
   <div class="tab">
     <a routerLink="/words-of-wisdom">
-      <img class="icons" src="../../assets/icons/white-book.png" />
+      <img class="icons" src="../../assets/icons/words.png" />
     </a>
-    <p class="iconText" id="words">Words of Wisdom</p>
   </div>
 
   <div class="tab">
     <a routerLink="/feeding-alarm">
-      <img class="icons" src="../../assets/icons/white-clock.png" />
+      <img class="icons" src="../../assets/icons/alarm.png" />
     </a>
-    <p class="iconText" id="alarm">Feeding Alarm</p>
   </div>
 
   <div class="tab">
     <a routerLink="/vet-assist">
-      <img class="icons" src="../../assets/icons/listening-heart-white.png" />
+      <img class="icons" src="../../assets/icons/vet.png" />
     </a>
-    <p class="iconText" id="vetAssist">Vet Assist</p>
   </div>
 </div>
 
-<img id="task" src="../../assets/homePage/tasks2.png">
+<img id="taskBar" src="../../assets/homePage/tasks2.png" />
+
+<div id="profile">
+  <p id="name">Sadman Amin</p>
+  <p id="role">Developer</p>
+  <img src="../../assets/homePage/profile.png" />
+</div>
+
+<!-- Anything above here is on every page -->
+
+<div id="pets">
+  <p id="slogan">Pet Guardian</p>
+
+  <img class="petCircles" src="../../assets/homePage/addPet.png" />
+  <p id="addPet">Add a pet</p>
+
+  <img class="petCircles" src="../../assets/homePage/luna.png" />
+  <p id="luna">Luna</p>
+
+  <img class="petCircles" src="../../assets/homePage/pet2.png" />
+  <p id="mike">Mike</p>
+</div>
+
+<div id="parks">
+  <p id="parksTitle">Parks</p>
+  <img class="park" src="../../assets/homePage/irvinePark.png" />
+  <img class="park" src="../../assets/homePage/hamiltonPark.png" />
+  <img class="park" src="../../assets/homePage/echoPark.png" />
+</div>
+
+<div id="advices">
+  <p id="adviceTitle">Owner Advice</p>
+  <img src="../../assets/homePage/advice1.png" />
+  <img src="../../assets/homePage/advice2.png" />
+</div>

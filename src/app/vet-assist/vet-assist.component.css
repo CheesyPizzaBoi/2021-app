@@ -1,6 +1,6 @@
 #table {
-  width: 148px;
-  background-color: #002176;
+  width: 126px;
+  background-color: #4356a6;
   position: fixed;
   height: 100%;
   top: 0;
@@ -8,43 +8,25 @@
   overflow-x: hidden;
 }
 
-.tab {
-  width: auto;
-  height: 109px;
-  background-color: #002176;
-  border-color: white;
-  border-width: 1.5px;
-  border-style: solid;
-  border-left-color: #002176;
+#top {
+  margin-top: 80px;
 }
 
-#logo {
-  background-color: white;
-  border-right-color: #002176;
-  border-bottom-color: #002176;
-  border-top-color: #002176;
-}
-#logoImage {
-  width: 86px;
-  height: 88px;
-  margin: auto;
-  display: block;
-  margin-top: 10px;
+.tab {
+  width: auto;
+  height: 150px;
 }
 
 .icons {
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  display: block;
-  margin-top: 15px;
+  position: relative;
+  left: 40px;
+  top: 30px;
 }
 
-.iconText {
-  color: white;
-  font-size: 18px;
-  font-family: 'Roboto';
-  text-align: center;
+#selected {
+  left: 25px;
+  position: relative;
+  top: 30px;
 }
 
 #right-box {
@@ -57,76 +39,49 @@
   text-decoration-line: underline;
 }
 
-#words,
-#alarm {
-  font-size: 17px;
-}
-
-#vetTab {
-  background-color: #f1ff9d;
-}
-#vetText {
-  color: #002176;
-}
-
-#company {
-  display: inline-block;
-  text-decoration: underline;
-  font-family: "Roboto";
-  font-size: 48px;
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 195px;
-}
-
-#reminder {
-  padding-top: 1px;
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 170px;
-  font-size: 18px;
-  line-height: 21px;
-  color: #002176;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#comingBox {
-  background-color: #f1ff9d;
-  width: 245px;
-  height: 85px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#coming {
-  padding-top: 20px;
-  color: #002176;
-  font-size: 18px;
-}
-
-.square {
-  width: 256px;
-  height: 262px;
-}
-.vetPics {
+#taskBar {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  height: 1020px;
   width: 258px;
+}
+
+#profile {
+  position: absolute;
+  right: 90px;
+  top: 40px;
+}
+
+#name,
+#role {
+  position: absolute;
+  font-family: Hind;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+}
+
+#name {
+  width: 130px;
+  right: 85px;
+}
+#role {
+  right: 120px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* anything above here is on every page */
+
+.vetPics {
+  width: 335px;
   height: 192px;
 }
 
-.rectangles {
-  width: 258px;
-  height: 68px;
-  background: rgba(245, 255, 180, 0.99);
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: -4px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  padding-top: 20px;
-  text-align: center;
-}
 
 a:visited {
   text-decoration: none;
@@ -141,25 +96,21 @@ a {
 #top-left,
 #top-right {
   position: absolute;
-  top: 175px;
+  top: 250px;
 }
 
 #bot-left,
 #bot-right {
   position: absolute;
-  top: 500px;
+  top: 600px;
 }
 
 #top-left,
 #bot-left {
-  left: 300px;
+  left: 600px;
 }
 
 #top-right,
 #bot-right {
-  left: 710px;
-}
-
-.message {
-  margin-bottom: -10px;
+  left: 1050px;
 }
